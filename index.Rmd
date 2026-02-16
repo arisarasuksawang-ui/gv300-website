@@ -11,5 +11,8 @@ I’m a Politics and International Relations student interested in political beh
 
 
 
+## Distribution of constituency sizes
+
+![](docs/constituency_histogram.png)
 
 
