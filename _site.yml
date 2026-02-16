@@ -1,0 +1,12 @@
+name: "GV300 website"
+title: "arissara GV300 profile"
+description: |
+  arissara GV300 profile
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-02-16T17:52:56+00:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Arissara Suksawaeng",
+      "description": "GV300 portfolio website",
+      "author": [],
+      "contents": "\r\nHi, I’m Arissara\r\nI’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly. This site showcases selected work from GV300, including reproducible analysis and a data visualisation I am most proud of.\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-02-16T17:52:57+00:00"
+    }
+  ],
+  "collections": []
+}

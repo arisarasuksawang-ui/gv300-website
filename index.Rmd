@@ -1,0 +1,15 @@
+---
+title: "Arissara Suksawaeng"
+description: "GV300 portfolio website"
+site: distill::distill_website
+---
+
+
+## Hi, I’m Arissara
+
+I’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly. This site showcases selected work from GV300, including reproducible analysis and a data visualisation I am most proud of.
+
+
+
+
+
