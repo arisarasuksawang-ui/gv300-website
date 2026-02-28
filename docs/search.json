@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2026-02-28T21:15:23+00:00"
+      "last_modified": "2026-02-28T21:34:00+00:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,15 @@
       "description": "GV300 portfolio website",
       "author": [],
       "contents": "\r\nHi, I’m Arissara\r\nI’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly.\r\nDistribution of constituency sizes\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2026-02-28T21:15:25+00:00"
+      "last_modified": "2026-02-28T21:34:07+00:00"
+    },
+    {
+      "path": "profile.html",
+      "title": "Profile",
+      "description": "My work and experience",
+      "author": [],
+      "contents": "\r\nMy work\r\nThis page shows my academic and data analysis work.\r\nData analysis project\r\nBrief description here.\r\nResearch essay\r\nBrief description here.\r\nSkills\r\nR\r\nData visualisation\r\nPolitical analysis\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-02-28T21:34:08+00:00"
     }
   ],
   "collections": []
