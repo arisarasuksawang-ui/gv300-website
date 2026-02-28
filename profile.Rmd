@@ -1,0 +1,19 @@
+---
+title: "Profile"
+description: "My work and experience"
+---
+## My work
+
+This page shows my academic and data analysis work.
+
+### Data analysis project
+Brief description here.
+
+### Research essay
+Brief description here.
+
+### Skills
+- R
+- Data visualisation
+- Political analysis
+
