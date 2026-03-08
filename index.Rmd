@@ -1,19 +1,27 @@
 ---
 title: "Arissara Suksawaeng"
 description: "GV300 portfolio website"
-site: distill::distill_website
+output: distill::distill_article
 ---
+
 
 ## Hi, I’m Arissara
 
-I’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly.
+I’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly. This site showcases selected work from GV300, including reproducible analysis and a data visualisation I am most proud of.
 
-## Distribution of constituency sizes
+## Academic work
 
-![](constituency_histogram.png)
+### Data analysis project
+Brief description of your project here.
 
+### Research essay
+Short explanation of your work.
 
-
+### Skills
+- R
+- Data visualisation
+- Political analysis
+- Research methods
 
 
 

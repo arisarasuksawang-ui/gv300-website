@@ -1,44 +1,19 @@
 ---
-title: "Profile"
-description: "My assignment"
+title: "About"
+description: "About this website"
+output: distill::distill_article
 ---
 
-## My work
+## About this site
 
-This page shows my academic and data analysis work.
+This website was created as part of the GV300 Data Analysis module. It presents examples of my work using R to explore and visualise political and social data.
 
-### Distribution of mothers’ ages in the dataset
+The aim of the site is to demonstrate how data analysis can be used to communicate ideas clearly and effectively.
 
-## Data visualisation project
+## About me
 
-This project explores the distribution of UK constituency sizes.
+I am a Politics and International Relations student interested in political behaviour and data analysis. I use R to analyse datasets and produce visualisations that help explain patterns in political and social data.
 
-```{r}
-library(ggplot2)
-
-ggplot(kidiq_2, aes(x = mom_age)) +
-  geom_histogram(binwidth = 2, fill = "steelblue", colour = "white") +
-  theme_minimal()
-```
-
-
-### Data analysis project
-This project uses the kidiq dataset to explore the distribution of mothers’ ages at the time of childbirth. The histogram shows how frequently different ages appear in the dataset. Most mothers in the sample are between 20 and 25 years old, with fewer observations at younger and older ages. This suggests that childbirth in the dataset is most common in the early twenties.
-
-This analysis demonstrates how R and ggplot2 can be used to visualise distributions and identify patterns in data.
-
-### Research essay
-In my research essay, I analysed political behaviour using empirical evidence from course readings and datasets. The essay focused on how social and economic factors influence political outcomes. By combining theoretical arguments with data analysis, the research aimed to better understand patterns in political behaviour.
-
-### Skills
-
-- R programming for data analysis
-
-- Data visualisation using ggplot2
-
-- Interpreting statistical distributions
-
-- Communicating insights using visual evidence
-
-- Political analysis and research writing
-
+## What you can find on this site
+- **Home page** – introduction to the project and a visualisation of UK constituency sizes.  
+- **Profile page** – examples of my work, including a data visualisation project analysing mothers' ages in the dataset.

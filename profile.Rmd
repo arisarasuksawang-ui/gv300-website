@@ -1,11 +1,11 @@
 ---
-title: "profile"
-author: '2316493'
-date: "2026-03-05"
-output: html_document
+title: "Profile"
+description: "My assignment"
+output: distill::distill_article
 ---
 
 ## My work
+
 
 This page shows my academic and data analysis work.
 
@@ -17,13 +17,13 @@ This project explores the distribution of UK constituency sizes.
 
 ```{r}
 library(ggplot2)
-
 ggplot(kidiq_2, aes(x = mom_age)) +
   geom_histogram(binwidth = 2, fill = "steelblue", colour = "white") +
   theme_minimal()
 ```
 ### Data analysis project
 This project uses the kidiq dataset to explore the distribution of mothers’ ages at the time of childbirth. The histogram shows how frequently different ages appear in the dataset. Most mothers in the sample are between 20 and 25 years old, with fewer observations at younger and older ages. This suggests that childbirth in the dataset is most common in the early twenties.
+
 
 This analysis demonstrates how R and ggplot2 can be used to visualise distributions and identify patterns in data.
 
@@ -35,6 +35,7 @@ In my research essay, I analysed political behaviour using empirical evidence fr
 - R programming for data analysis
 
 - Data visualisation using ggplot2
+
 
 - Interpreting statistical distributions
 
