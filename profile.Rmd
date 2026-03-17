@@ -3,9 +3,7 @@ title: "Profile"
 description: "My assignment"
 output: distill::distill_article
 ---
-
 ## My work
-
 
 This page shows my academic and data analysis work.
 
@@ -61,6 +59,55 @@ In my research essay, I analysed political behaviour using empirical evidence fr
 
 - Political analysis and research writing
 
+
+### Visualisation
+## Election turnout visualisation
+
+This plot shows the distribution of constituencies across turnout categories by country in the UK general election dataset.
+
+## Election turnout visualisation
+
+This visualisation compares the share of constituencies in each turnout category across the four UK countries. It improves on a simple count chart by showing proportions, which makes comparison between countries easier.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+# load your dataset
+uk <- read.csv("data/uk.csv")
+
+turnout_categories <- uk %>%
+  mutate(
+    category = case_when(
+      turnout_registered < 55 ~ "Low",
+      turnout_registered < 65 ~ "Medium",
+      turnout_registered < 75 ~ "High",
+      TRUE ~ "Very High"
+    ),
+    category = factor(category, levels = c("Low", "Medium", "High", "Very High"))
+  )
+
+category_counts <- turnout_categories %>%
+  count(country, category)
+
+ggplot(category_counts, aes(x = country, y = n, fill = category)) +
+  geom_col(position = "fill", width = 0.75) +
+  scale_y_continuous(labels = percent_format()) +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Turnout composition by country",
+    subtitle = "Share of constituencies in each turnout category",
+    x = "Country",
+    y = "Proportion of constituencies",
+    fill = "Turnout category"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    legend.position = "bottom"
+  )
+```
 
 
   

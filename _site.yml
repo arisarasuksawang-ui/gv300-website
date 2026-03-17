@@ -1,8 +1,7 @@
 
-
 name: "GV300 website"
 navbar:
-   title: "arissara GV300 profile"
+  title: "arissara GV300 profile"
   left:
     - text: "Home"
       href: index.html
@@ -10,12 +9,8 @@ navbar:
       href: about.html
     - text: "Profile"
       href: profile.html
-
 output_dir: "docs"
 output: distill::distill_article
-  
-  
-  
   
   
   
