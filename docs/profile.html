@@ -89,22 +89,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>arissara GV300 profile: Profile</title>
+  <title>GV300 profile: Profile</title>
 
   <meta property="description" itemprop="description" content="My assignment"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="arissara GV300 profile: Profile"/>
+  <meta property="og:title" content="GV300 profile: Profile"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="My assignment"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="arissara GV300 profile"/>
+  <meta property="og:site_name" content="GV300 profile"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="arissara GV300 profile: Profile"/>
+  <meta property="twitter:title" content="GV300 profile: Profile"/>
   <meta property="twitter:description" content="My assignment"/>
 
   <!--/radix_placeholder_meta_tags-->
@@ -2128,7 +2128,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">arissara GV300 profile</a>
+<a href="index.html" class="title">GV300 profile</a>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="profile.html">Profile</a>
@@ -2159,10 +2159,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>This project explores the distribution of UK constituency sizes.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
-<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>kidiq_2</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>mom_age</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span>binwidth <span class='op'>=</span> <span class='fl'>2</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span>, colour <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>kidiq_2</span>, <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>mom_age</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>geom_histogram</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>y <span class='op'>=</span> <span class='fu'>after_stat</span><span class='op'>(</span><span class='va'>density</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                 binwidth <span class='op'>=</span> <span class='fl'>2</span>,</span>
+<span>                 fill <span class='op'>=</span> <span class='st'>"#2C7FB8"</span>,</span>
+<span>                 colour <span class='op'>=</span> <span class='st'>"white"</span>,</span>
+<span>                 alpha <span class='op'>=</span> <span class='fl'>0.8</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>geom_density</span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#08306B"</span>, linewidth <span class='op'>=</span> <span class='fl'>1.2</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>geom_vline</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>mom_age</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>             colour <span class='op'>=</span> <span class='st'>"red"</span>,</span>
+<span>             linetype <span class='op'>=</span> <span class='st'>"dashed"</span>,</span>
+<span>             linewidth <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>labs</span><span class='op'>(</span></span>
+<span>    title <span class='op'>=</span> <span class='st'>"Distribution of Mothers' Ages"</span>,</span>
+<span>    subtitle <span class='op'>=</span> <span class='st'>"Histogram with density curve and mean age"</span>,</span>
+<span>    x <span class='op'>=</span> <span class='st'>"Mother's Age"</span>,</span>
+<span>    y <span class='op'>=</span> <span class='st'>"Density"</span>,</span>
+<span>    caption <span class='op'>=</span> <span class='st'>"Source: kidiq dataset"</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>theme_minimal</span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>14</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="profile_files/figure-html5/unnamed-chunk-1-1.png" alt="" width="624" /></p>
 </div>
