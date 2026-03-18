@@ -1,7 +1,7 @@
 
 name: "GV300 website"
 navbar:
-  title: "arissara GV300 profile"
+  title: "GV300 profile"
   left:
     - text: "Home"
       href: index.html
