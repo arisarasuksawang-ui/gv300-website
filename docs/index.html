@@ -2143,34 +2143,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>index.knit</h1>
+<h1>Arissara Suksawaeng</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p>GV300 portfolio website</p>
 </div>
 
 
 <div class="d-article">
-<hr />
-<p>title: “Arissara Suksawaeng”
-description: “GV300 portfolio website”
-output: distill::distill_article</p>
-<hr />
 <h2 id="hi-im-arissara">Hi, I’m Arissara</h2>
-<p>I’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly. This site showcases selected work from GV300, including reproducible analysis and a data visualisation I am most proud of.</p>
-<h2 id="academic-work">Academic work</h2>
-<h3 id="data-analysis-project">Data analysis project</h3>
-<p>Brief description of your project here.</p>
-<h3 id="research-essay">Research essay</h3>
-<p>Short explanation of your work.</p>
-<h3 id="skills">Skills</h3>
-<ul>
-<li>R</li>
-<li>Data visualisation</li>
-<li>Political analysis</li>
-<li>Research methods</li>
-</ul>
+<p>I am a Politics and International Relations student with an interest in political behaviour, data analysis, and visual communication. This website presents selected work from GV300, including data visualisation and text analysis completed in R.</p>
+<h2 id="featured-work">Featured work</h2>
+<p>This portfolio highlights examples of how quantitative and text-based methods can be used to communicate political ideas clearly. My work focuses on presenting evidence in a simple and accessible way through graphs, reproducible code, and short written interpretation.</p>
+<h2 id="featured-visualisation">Featured visualisation</h2>
+<p>This visualisation demonstrates my ability to use R to analyse and present data clearly.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>plot_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span></span>
+<span>  category <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Low"</span>, <span class='st'>"Medium"</span>, <span class='st'>"High"</span>, <span class='st'>"Very high"</span><span class='op'>)</span>,</span>
+<span>  value <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>8</span>, <span class='fl'>18</span>, <span class='fl'>32</span>, <span class='fl'>14</span><span class='op'>)</span></span>
+<span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>plot_df</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>category</span>, y <span class='op'>=</span> <span class='va'>value</span>, fill <span class='op'>=</span> <span class='va'>category</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='fl'>0.7</span>, show.legend <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_brewer.html'>scale_fill_brewer</a></span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"Blues"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
+<span>    title <span class='op'>=</span> <span class='st'>"Example turnout pattern"</span>,</span>
+<span>    subtitle <span class='op'>=</span> <span class='st'>"Illustrative visualisation for portfolio presentation"</span>,</span>
+<span>    x <span class='op'>=</span> <span class='st'>"Turnout category"</span>,</span>
+<span>    y <span class='op'>=</span> <span class='st'>"Number of constituencies"</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>14</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
+<span>    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span>  <span class='op'>)</span></span></code></pre>
+</div>
+<p><img src="index_files/figure-html5/unnamed-chunk-1-1.png" alt="" width="624" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
