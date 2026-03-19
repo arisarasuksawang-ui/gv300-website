@@ -1,34 +1,41 @@
 ---
-
 title: "Arissara Suksawaeng"
 description: "GV300 portfolio website"
 output: distill::distill_article
-
 ---
-
 
 ## Hi, I’m Arissara
 
-I’m a Politics and International Relations student interested in political behaviour and using data to communicate ideas clearly. This site showcases selected work from GV300, including reproducible analysis and a data visualisation I am most proud of.
+I am a Politics and International Relations student with an interest in political behaviour, data analysis, and visual communication. This website presents selected work from GV300, including data visualisation and text analysis completed in R.
 
-## Academic work
+## Featured work
 
-### Data analysis project
-Brief description of your project here.
+This portfolio highlights examples of how quantitative and text-based methods can be used to communicate political ideas clearly. My work focuses on presenting evidence in a simple and accessible way through graphs, reproducible code, and short written interpretation.
 
-### Research essay
-Short explanation of your work.
+## Featured visualisation
 
-### Skills
-- R
-- Data visualisation
-- Political analysis
-- Research methods
+This visualisation demonstrates my ability to use R to analyse and present data clearly.
 
+```{r}
+library(ggplot2)
 
+plot_df <- data.frame(
+  category = c("Low", "Medium", "High", "Very high"),
+  value = c(8, 18, 32, 14)
+)
 
-
-
-
-
-
+ggplot(plot_df, aes(x = category, y = value, fill = category)) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  scale_fill_brewer(palette = "Blues") +
+  labs(
+    title = "Example turnout pattern",
+    subtitle = "Illustrative visualisation for portfolio presentation",
+    x = "Turnout category",
+    y = "Number of constituencies"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.x = element_blank()
+  )
+```
