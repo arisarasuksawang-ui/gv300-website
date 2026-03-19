@@ -1,6 +1,6 @@
 ---
 title: "Profile"
-description: "My assignment"
+description: "Assignment 6"
 output: distill::distill_article
 ---
 ## My work
