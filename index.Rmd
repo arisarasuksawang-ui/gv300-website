@@ -1,8 +1,10 @@
 ---
 title: "Arissara Suksawaeng"
-description: "GV300 portfolio website"
+description: "GV300 assignment 6 portfolio"
 output: distill::distill_article
 ---
+
+*This website was developed for GV300 Assignment 6 and presents selected work in data visualisation and text analysis using R.*
 
 ## Hi, I’m Arissara
 

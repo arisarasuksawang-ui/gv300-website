@@ -14,6 +14,7 @@ This page shows my academic and data analysis work.
 This project explores the distribution of UK constituency sizes.
 
 ```{r}
+
 ggplot(kidiq_2, aes(x = mom_age)) +
   geom_histogram(aes(y = after_stat(density)),
                  binwidth = 2,
@@ -63,7 +64,6 @@ In my research essay, I analysed political behaviour using empirical evidence fr
 
 ```{r}
 library(tidytext)
-
 library(dplyr)
 library(ggplot2)
 
@@ -84,6 +84,7 @@ word_counts <- words %>%
   count(word, sort = TRUE) %>%
   slice_max(n, n = 10)
 
+
 ggplot(word_counts, aes(x = reorder(word, n), y = n)) +
   geom_col(fill = "#2C7FB8", width = 0.7) +
   coord_flip() +
@@ -101,9 +102,18 @@ ggplot(word_counts, aes(x = reorder(word, n), y = n)) +
   )
 ```
   
-  
 
+The results show that words such as *democracy*, *voting*, and *representation* appear most frequently. This highlights the central themes of political participation and democratic engagement within the text.
 
+---
+
+## Skills
+
+- R programming  
+- Data visualisation  
+- Text analysis  
+- Political data analysis  
+- Reproducible research
 
   
   

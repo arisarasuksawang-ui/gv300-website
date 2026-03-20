@@ -6,7 +6,7 @@ output: distill::distill_article
 
 ## About this site
 
-This website was created as part of the GV300 Data Analysis module. It presents examples of my work using R to explore and visualise political and social data.
+This website was created for GV300 Assignment 6. It presents examples of my work using R to explore, visualise, and interpret political and social data.
 
 The aim of the site is to demonstrate how data analysis can be used to communicate ideas clearly and effectively.
 
