@@ -1,6 +1,6 @@
 ---
 title: "Profile"
-description: "Assignment 6"
+description: "My Assignment"
 output: distill::distill_article
 ---
 ## My work
@@ -60,6 +60,8 @@ In my research essay, I analysed political behaviour using empirical evidence fr
 
 - Political analysis and research writing
 
+---
+
 #This visualisation shows the most frequent political terms in the sample text after removing common stop words. Terms such as democracy, voting, and representation appear most often, highlighting the central themes of political participation and democratic engagement.
 
 ```{r}
@@ -105,8 +107,6 @@ ggplot(word_counts, aes(x = reorder(word, n), y = n)) +
 
 The results show that words such as *democracy*, *voting*, and *representation* appear most frequently. This highlights the central themes of political participation and democratic engagement within the text.
 
----
-
 ## Skills
 
 - R programming  
@@ -116,4 +116,4 @@ The results show that words such as *democracy*, *voting*, and *representation* 
 - Reproducible research
 
   
-  
+---

@@ -1,6 +1,6 @@
 ---
 title: "Arissara Suksawaeng"
-description: "GV300 assignment 6 portfolio"
+description: "GV300 Assignment"
 output: distill::distill_article
 ---
 
